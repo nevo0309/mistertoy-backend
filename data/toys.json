@@ -1,0 +1,107 @@
+[
+  {
+    "name": "Speed Racer",
+    "price": 25,
+    "labels": ["On wheels"],
+    "createdAt": 1713139200000,
+    "inStock": true
+  },
+  {
+    "name": "Magic Puzzle",
+    "price": 40,
+    "labels": ["Puzzle", "Box game"],
+    "createdAt": 1712252800000,
+    "inStock": false
+  },
+  {
+    "name": "Creative Art Set",
+    "price": 30,
+    "labels": ["Art"],
+    "createdAt": 1711065600000,
+    "inStock": true
+  },
+  {
+    "name": "Baby Rattle",
+    "price": 15,
+    "labels": ["Baby"],
+    "createdAt": 1708473600000,
+    "inStock": false
+  },
+  {
+    "name": "Dollhouse",
+    "price": 80,
+    "labels": ["Doll"],
+    "createdAt": 1705881600000,
+    "inStock": true
+  },
+  {
+    "name": "Jungle Adventure",
+    "price": 50,
+    "labels": ["Outdoor"],
+    "createdAt": 1712697600000,
+    "inStock": true
+  },
+  {
+    "name": "Battery Train",
+    "price": 45,
+    "labels": ["Battery Powered", "On wheels"],
+    "createdAt": 1703289600000,
+    "inStock": false
+  },
+  {
+    "name": "Painting Set",
+    "price": 35,
+    "labels": ["Art"],
+    "createdAt": 1709683200000,
+    "inStock": true
+  },
+  {
+    "name": "Soft Plush Bear",
+    "price": 20,
+    "labels": ["Baby", "Doll"],
+    "createdAt": 1707081600000,
+    "inStock": false
+  },
+  {
+    "name": "Explorer Kit",
+    "price": 55,
+    "labels": ["Outdoor", "Box game"],
+    "createdAt": 1713388800000,
+    "inStock": true
+  },
+  {
+    "name": "Super Car",
+    "price": 60,
+    "labels": ["On wheels", "Battery Powered"],
+    "createdAt": 1711574400000,
+    "inStock": false
+  },
+  {
+    "name": "Classic Puzzle",
+    "price": 22,
+    "labels": ["Puzzle"],
+    "createdAt": 1710624000000,
+    "inStock": true
+  },
+  {
+    "name": "Building Blocks",
+    "price": 38,
+    "labels": ["Box game", "Art"],
+    "createdAt": 1712006400000,
+    "inStock": false
+  },
+  {
+    "name": "Tricycle",
+    "price": 70,
+    "labels": ["On wheels", "Outdoor"],
+    "createdAt": 1706400000000,
+    "inStock": true
+  },
+  {
+    "name": "Glow Drone",
+    "price": 120,
+    "labels": ["Battery Powered", "Outdoor"],
+    "createdAt": 1703808000000,
+    "inStock": false
+  }
+]
