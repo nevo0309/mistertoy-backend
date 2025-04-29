@@ -1,38 +1,5 @@
 [
     {
-        "name": "xcxc",
-        "price": 10,
-        "labels": [
-            "Doll"
-        ],
-        "_id": "wVmyq",
-        "createdAt": 1745850429022,
-        "inStock": true
-    },
-    {
-        "name": "nevo",
-        "price": 33,
-        "labels": [
-            "Baby",
-            "Box game",
-            "Outdoor"
-        ],
-        "_id": "7yIiW",
-        "createdAt": 1745850161718,
-        "inStock": true
-    },
-    {
-        "name": "dcsds",
-        "price": 2,
-        "labels": [
-            "Art",
-            "Battery Powered"
-        ],
-        "_id": "u5mJn",
-        "createdAt": 1745849533233,
-        "inStock": true
-    },
-    {
         "_id": "d3e4f",
         "name": "Magic Puzzle",
         "price": 40,
