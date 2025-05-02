@@ -4,6 +4,10 @@ import cors from 'cors'
 import cookieParser from 'cookie-parser'
 import { loggerService } from './services/logger.service.js'
 import { toyService } from './services/toy.service.js'
+import dotenv from 'dotenv'
+dotenv.config()
+
+const googleMapsKey = process.env.GOOGLE_MAPS_API_KEY
 
 const toyLabels = [
   'On wheels',
@@ -115,6 +119,10 @@ app.delete('/api/toy/:toyId', (req, res) => {
       loggerService.error('Cannot delete toy', err)
       res.status(400).send('Cannot delete toy, ' + err)
     })
+})
+
+app.get('/api/config/google-maps-key', (req, res) => {
+  res.send({ apiKey: googleMapsKey })
 })
 
 // // Fallback
