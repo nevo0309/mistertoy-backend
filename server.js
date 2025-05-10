@@ -65,6 +65,9 @@ app.get('/api/toy', (req, res) => {
       res.status(400).send('Cannot load toys')
     })
 })
+app.get('/api/toy/stats', (req, res) => {
+  toyService.getToysStats().then(stats => res.send(stats))
+})
 
 app.get('/api/toy/:toyId', (req, res) => {
   const { toyId } = req.params
