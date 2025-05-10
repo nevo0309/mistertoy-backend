@@ -18,6 +18,7 @@ export const toyService = {
   remove,
   save,
   getLabels,
+  getToysStats,
 }
 
 function query(filterBy = {}) {
@@ -94,6 +95,27 @@ function _makeId(length = 5) {
 
 function getLabels() {
   return Promise.resolve(toyLabels)
+}
+
+function getToysStats() {
+  const labelStats = {}
+
+  toyLabels.forEach(label => {
+    const labelToys = toys.filter(toy => toy.labels.includes(label))
+
+    const totalPrice = labelToys.reduce((sum, toy) => sum + toy.price, 0)
+    const avgPrice = labelToys.length ? totalPrice / labelToys.length : 0
+
+    const inStockCount = labelToys.filter(toy => toy.inStock).length
+    const stockPercent = labelToys.length ? (inStockCount / labelToys.length) * 100 : 0
+
+    labelStats[label] = {
+      avgPrice: +avgPrice.toFixed(2),
+      stockPercent: +stockPercent.toFixed(2),
+    }
+  })
+
+  return Promise.resolve(labelStats)
 }
 
 function _saveToysToFile() {
