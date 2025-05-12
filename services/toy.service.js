@@ -97,7 +97,7 @@ function getLabels() {
   return Promise.resolve(toyLabels)
 }
 
-function getToysStats() {
+async function getToysStats() {
   const labelStats = {}
 
   toyLabels.forEach(label => {
@@ -115,7 +115,7 @@ function getToysStats() {
     }
   })
 
-  return Promise.resolve(labelStats)
+  return labelStats
 }
 
 function _saveToysToFile() {
