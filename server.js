@@ -8,6 +8,7 @@ import { loggerService } from './services/logger.service.js'
 import { toyRoutes } from './api/toy/toy.routes.js'
 import { authRoutes } from './api/auth/auth.routes.js'
 import { userRoutes } from './api/user/user.routes.js'
+import { setupAsyncLocalStorage } from './middleware/setupAls.middleware.js'
 
 dotenv.config()
 const googleMapsKey = process.env.GOOGLE_MAPS_API_KEY
@@ -33,6 +34,7 @@ if (process.env.NODE_ENV === 'production') {
   }
   app.use(cors(corsOptions))
 }
+app.all('/*all', setupAsyncLocalStorage)
 
 app.use('/api/toy', toyRoutes)
 app.use('/api/auth', authRoutes)
