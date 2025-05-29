@@ -9,6 +9,7 @@ import { toyRoutes } from './api/toy/toy.routes.js'
 import { authRoutes } from './api/auth/auth.routes.js'
 import { userRoutes } from './api/user/user.routes.js'
 import { setupAsyncLocalStorage } from './middleware/setupAls.middleware.js'
+import { reviewRoutes } from './api/review/review.routes.js'
 
 dotenv.config()
 const googleMapsKey = process.env.GOOGLE_MAPS_API_KEY
@@ -39,6 +40,7 @@ app.all('/*all', setupAsyncLocalStorage)
 app.use('/api/toy', toyRoutes)
 app.use('/api/auth', authRoutes)
 app.use('/api/user', userRoutes)
+app.use('/api/review', reviewRoutes)
 
 // Config: expose Google Maps API key
 app.get('/api/config/google-maps-key', (req, res) => {
